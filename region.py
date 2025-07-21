@@ -2,7 +2,7 @@
 # Chapter 15 cpx 1
 # Region class
 # 7/20/2025
-import adafruit_circuitplayground.express as cp
+from adafruit_circuitplayground import cp
 
 
 class Region:

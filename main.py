@@ -3,7 +3,7 @@
 # Main
 # 7/20/2025
 
-import adafruit_circuitplayground.express as cp
+from adafruit_circuitplayground import cp
 import time
 from region import Region
 
@@ -12,11 +12,14 @@ blue = Region((0, 0, 255), (2, 3, 4))
 
 while True:
     yellow.all_on()
-    blue.all_on()
     cp.pixels.show()
     time.sleep(0.5)
 
     yellow.all_off()
+    blue.all_on()
+    cp.pixels.show()
+    time.sleep(0.5)
+
     blue.all_off()
     cp.pixels.show()
     time.sleep(0.5)
